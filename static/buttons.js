@@ -31,18 +31,20 @@ function create_box(startbox,box1,json_info) {
     }
 
     flipcardback.appendChild(firstiteam)
+    var seconditeam = document.createElement("span")
+    seconditeam.classList.add("seconditeam")
+    flipcardback.appendChild(seconditeam)
+
 
     if (json_info !== undefined){
-        var text = document.createElement("p")
-      var seconditeam = document.createElement("span")
-      seconditeam.classList.add("seconditeam")
-      seconditeam.classList.add("center")
+        for (text of json_info.text) {
+            var text_p = document.createElement("p")
+            seconditeam.classList.add("center")
 
-
-      var flipcardfronttxt = document.createTextNode(json_info.text);
-        text.appendChild(flipcardfronttxt);
-      seconditeam.appendChild(text);
-      flipcardback.appendChild(seconditeam)
+            var flipcardbacktxt = document.createTextNode(text);
+            text_p.appendChild(flipcardbacktxt);
+            seconditeam.appendChild(text_p);
+        }
     if (json_info.weblinks !== undefined) {
         var weblink_container = document.createElement("div")
         weblink_container.classList.add("skills_and_links_div")
