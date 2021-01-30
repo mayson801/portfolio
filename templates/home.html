@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <title>Title</title>
+
+
+</head>
+<script type="text/javascript" src="/static/buttons.js"></script>
+<script>
+var JSON_data = {{ data | tojson | safe}};
+</script>
+<body>
+    <table id="navbar">
+        <tr>
+            <th class="navbaritems"><button onclick="projects(JSON_data)" >projects</button></th>
+            <th class="navbaritems"><button onclick="skills(JSON_data)">skills</button></th>
+            <th class="navbaritems"><button onclick="about(JSON_data)">about me</button></th>
+            <th class="navbaritems"><button onclick="contact(JSON_data)">contact me</button></th>
+        </tr>
+    </table>
+
+
+    <div id="full-width">
+        <span class="center firstiteam" style="height:80%; width:40%;position:absolute"><img class="img_projects" src="../static/img/me.jpg"></span>
+        <span class="center seconditeam">My name Matthew Mayson.Welcome to my portfolio</span>
+        <div id="footer">test</div>
+    </div>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+
+</html>
