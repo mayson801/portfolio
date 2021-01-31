@@ -1,42 +1,35 @@
 function create_box(startbox,box1,json_info) {
-  var flipcard = document.createElement("div");
-  var flipcardinner = document.createElement("div");
-  var flipcardfront = document.createElement("div");
-  var flipcardback = document.createElement("div");
-  var firstiteam = document.createElement("span")
+    var flipcard = document.createElement("div");
+    var flipcardinner = document.createElement("div");
+    var flipcardfront = document.createElement("div");
+    var flipcardtextbox = document.createElement("p");
+    var flipcardback = document.createElement("div");
+    var firstiteam = document.createElement("span")
 
 
-  flipcard.classList.add("flipcard")
-  flipcardinner.classList.add("flipcardinner")
-  flipcardfront.classList.add("flipcardfront")
-  flipcardback.classList.add("flipcardback")
-  firstiteam.classList.add("firstiteam")
-  firstiteam.classList.add("center")
+    flipcard.classList.add("flipcard")
+    flipcardinner.classList.add("flipcardinner")
+    flipcardfront.classList.add("flipcardfront")
+    flipcardback.classList.add("flipcardback")
+    firstiteam.classList.add("firstiteam")
+    firstiteam.classList.add("center")
 
-  var startboxtxt = document.createTextNode(startbox);
-  flipcardfront.appendChild(startboxtxt);
-
-
-    if (box1.startsWith("../") == true) {
-      var imgage = document.createElement("IMG");
-      imgage.setAttribute("src", box1);
-      imgage.classList.add("img_projects")
-
-      firstiteam.appendChild(imgage);
-    }
-
-    else {
-        var flipcardfronttxt = document.createTextNode(box1);
-        firstiteam.appendChild(flipcardfronttxt);
-    }
+    var startboxtxt = document.createTextNode(startbox);
+    flipcardtextbox.appendChild(startboxtxt);
+    flipcardfront.appendChild(flipcardtextbox);
 
     flipcardback.appendChild(firstiteam)
     var seconditeam = document.createElement("span")
     seconditeam.classList.add("seconditeam")
     flipcardback.appendChild(seconditeam)
 
+      var imgage = document.createElement("IMG");
+      imgage.setAttribute("src", box1);
+      imgage.classList.add("img_projects")
 
-    if (json_info !== undefined){
+      firstiteam.appendChild(imgage);
+
+    if (json_info !== undefined) {
         for (text of json_info.text) {
             var text_p = document.createElement("p")
             seconditeam.classList.add("center")
@@ -45,10 +38,10 @@ function create_box(startbox,box1,json_info) {
             text_p.appendChild(flipcardbacktxt);
             seconditeam.appendChild(text_p);
         }
-    if (json_info.weblinks !== undefined) {
-        var weblink_container = document.createElement("div")
-        weblink_container.classList.add("skills_and_links_div")
-        seconditeam.appendChild(weblink_container)
+        if (json_info.weblinks !== undefined) {
+            var weblink_container = document.createElement("div")
+            weblink_container.classList.add("skills_and_links_div")
+            seconditeam.appendChild(weblink_container)
 
             for (weblink in json_info.weblinks) {
                 var weblink_iteam = document.createElement("a")
@@ -59,12 +52,12 @@ function create_box(startbox,box1,json_info) {
                 weblink_container.appendChild(weblink_iteam)
                 console.log(json_info.weblinks[weblink])
             }
-            }
+        }
 
         if (json_info.skills !== undefined) {
-        var skills_container = document.createElement("div")
-        skills_container.classList.add("skills_and_links_div")
-        seconditeam.appendChild(skills_container)
+            var skills_container = document.createElement("div")
+            skills_container.classList.add("skills_and_links_div")
+            seconditeam.appendChild(skills_container)
             for (skill of json_info.skills) {
                 var skills_used = document.createElement("a")
                 skills_used.classList.add("skills_used")
@@ -76,16 +69,15 @@ function create_box(startbox,box1,json_info) {
         }
 
 
-
     }
 
-  flipcardinner.appendChild(flipcardback)
+    flipcardinner.appendChild(flipcardback)
     flipcardinner.appendChild(flipcardfront)
 
-  flipcard.appendChild(flipcardinner)
+    flipcard.appendChild(flipcardinner)
 
-   fullwidth = document.getElementById("full-width");
-   fullwidth.appendChild(flipcard)
+    fullwidth = document.getElementById("full-width");
+    fullwidth.appendChild(flipcard)
 
 }
 
@@ -117,10 +109,10 @@ function footer(){
 function projects(JSON_data){
   clearing()
   create_box("spotify quiz","../static/img/spotify_quiz.png",JSON_data.projects.spotifyQuiz)
-  create_box("twitter_bot", "../static/img/Pringles-Logo.png",JSON_data.projects.twitter_bot)
-  create_box("top_40_data", "../static/img/top_40.png",JSON_data.projects.top_40_data)
+  create_box("twitter bot", "../static/img/Pringles-Logo.png",JSON_data.projects.twitter_bot)
+  create_box("uk top 40 study", "../static/img/top_40.png",JSON_data.projects.top_40_data)
   create_box("twitter cancel culture dissertation", "../static/img/cancel.jpg",JSON_data.projects.dissertation)
-  create_box("spotifywrapped", "false",JSON_data.projects.spotifywrapped)
+  create_box("spotify wrapped Comparing", "false",JSON_data.projects.spotifywrapped)
 
   footer()
 }
@@ -135,10 +127,11 @@ function skills(JSON_data){
 
 function about(JSON_data){
     clearing()
-  create_box("Personal_summary","../static/img/stock.jpg",JSON_data.aboutme.Personal_summary)
-  create_box("Education", "../static/img/stock.jpg",JSON_data.aboutme.Education)
-  create_box("work", "../static/img/stock.jpg",JSON_data.aboutme.work)
-  create_box("personal_interests", "../static/img/stock.jpg",JSON_data.aboutme.personal_interests)
+  create_box("Personal Summary","../static/img/stock.jpg",JSON_data.projects.aboutme.Personal_summary)
+  create_box("Education", "../static/img/graduate.jpg",JSON_data.projects.aboutme.Education)
+  create_box("work", "../static/img/stock.jpg",JSON_data.projects.aboutme.work)
+    create_box("Voluntary Experience", "../static/img/stock.jpg",JSON_data.projects.aboutme.Voluntary_Experience)
+  create_box("Personal Interests", "../static/img/stock.jpg",JSON_data.projects.aboutme.personal_interests)
 }
 
 function contact(JSON_data){

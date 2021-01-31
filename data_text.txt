@@ -1,24 +1,26 @@
 {"projects":{
 "spotifyQuiz": {"text":["This is my faviorate and best peice of work both conceptually and in terms of code quaility.The spotifyQuiz is a web app which allows users to generate a quiz based on either there spotify saved songs or they can choose any artist or any playlist provid it has over 10 songs. the quiz will then play a song which the user has to guess the song playing out of 4 possible options.The app is built using flask for the backend which connect to the spotify api to send the song preview uris and the front end is just js dom.In terms of imporovments I would like to improve the front end as it looks pretty ugly, theres also a bug when the quiz is loaded on the facebook messegan it doesn't play the first song,I think this is due to javascript not allowing sound to be played unless a button is pressed"],
                 "skills": ["python","flask","java_script","json","heroku"],
-                "weblinks": {
-                    "github":"https://github.com/mayson801/spotify_quiz",
-                    "weblink":"https://myspotifyquiz.herokuapp.com/select_type"
-                }
+                "weblinks": {"github":"https://github.com/mayson801/spotify_quiz","weblink":"https://myspotifyquiz.herokuapp.com"}
                 },
 
 "top_40_data": {"text":["This is a reserch project looking at trends in the top 40 music charts over the last 10 years it is built using dash.The data was gathered using Python and the web scraping package Beautiful Soup. The web scrapper gathers the chart position, song name and artist. The song name and artist is then passed through Spotify web API to find out meta data about the song such as song duration, BPM, etc. The data however is not 100% accurate as the name and artist from the official chart does not always match the name and artist on Spotify. This has led to a few covers being added rather than the actual song. There are also 52 songs that can't be found at all, these are usually songs which aren't on the charts for very long. A solution is to manually fix these which is a procedure I am working on at the moment."],
-                "skills": ["python","dash","java_script","heroku","beautiful soup","csv"]},
-
+                "skills": ["python","dash","java_script","heroku","beautiful soup","csv"],
+                "weblinks": {"github":"https://github.com/mayson801/top_40_data1","weblink":"https://top-40.herokuapp.com/"}
+                },
 "dissertation": {"text":["This is my disseration I created in my final year of university,it looks at the effect of twitter backlash/cancel culture on compaines and weather this backlash has any meaningfull impact and the longetivity of these backlashes.I used python to create a twitter scrapper and sentimental anyalsis to anylise the content of the tweets"],
-                "skills": ["python","tweepy","excel","csv"]},
-
+                "skills": ["python","tweepy","excel","csv"],
+                "weblinks": {"github":"https://github.com/mayson801/twitter_search"}
+                },
 "spotifywrapped":{"text":["Every year spotify does a year in review and creats a playlist based on your top 100 most listend to songs.This project anylisis these playlist and displays the data in graphs, the idea being the user will be able to spot trends in the music listening habbits over the years. for example my top songs in 2020 were on average much more accoustic as in previous years likly due to me being stuck inside due to covid.This project is deployed anywhere as getting the anlised track data is very slow due to around 400 request to spotify being needed to get all the data."],
-                "skills": ["python","ploty","java_script","json","pandas"]},
+                "skills": ["python","ploty","java_script","json","pandas"],
+                "weblinks": {"github":"https://github.com/mayson801/spotify_wraped"}
+                },
 
-"twitter_bot":{"text":["Has this every happened to you? your craving a box a pringles so you go to the shops to get a tube but when you get there it's £3.WHO IN THEIR RIGHT MIND PAYS £3 FOR A TUBE OF PRINGLES.This twitter bot scapes the major supermarkets and tweets the price of the standard flavor of pringals every day.Created with python using seliumn web scrapper and tweepy, deployed to AWS lambda so it can automaticallly run everyday."],
-                "skills": ["python","aws_lamda","docker","selenium"]}
-},
+"twitter_bot":{"text":["Has this every happened to you? your craving a box a pringles so you go to the shops to get a tube but when you get there it's£3.WHO IN THEIR RIGHT MIND PAYS £3 FOR A TUBE OF PRINGLES.This twitter bot scapes the major supermarkets and tweets the price of the standard flavor of pringals every day.Created with python using seliumn web scrapper and tweepy, deployed to AWS lambda so it can automaticallly run everyday."],
+                "skills": ["python","aws_lamda","docker","selenium"],
+                "weblinks": {"github":"https://github.com/mayson801/pringles","twitter":"https://twitter.com/Pringles_Price"}
+                },
 
 "skills":{
     "front_end":" ",
@@ -29,10 +31,10 @@
 
 "aboutme":{
     "Personal_summary":{"text":["I have a comprehensive knowledge and experience of a range of programs, language, frameworks and data bases to degree level. I have a passion for IT and a drive to keep up to date with current IT developments. I have experience of supporting others, sharing my knowledge to solve problems effectively. I am solution driven with a calm and logical approach to problem solving. This year I relocated to Nottingham and began working for Amazon. I am now keen to pursue my professional career."]},
-    "Education":{"text":["I graduated Edge Hill University in 2019 with 2:1 BSc Computing with modules including", "hello"]},
-    "work":{"text":" "},
-    "personal_interests":{"text":" "}
-},
-
-"contact_me":"hello"
+    "Education":{"text":["I graduated Edge Hill University in 2019 with 2:1 BSc Computing with modules including: Big Data,Databases,Computer Networks,Advanced Databases,Web design and development,Object orientated programming","During this three year course I studied a broad range of computing modules to graduate level. The choice of modules gave me the opportunity to pursue areas which I which I excelled at and was interested in. I was particularly passionate about modules involving data analysis and manipulation. This interest became the focus of my dissertation in which I gathered tweets, formatted the data and placed it in a database for analysis. This enabled me to analyse trends and patterns within twitters user base. To accomplish this, I independently built upon my coding knowledge by teaching myself Python in order to successfully complete my research.","I have 2 A levels and 4 AS levels 11 GCSE's A* - C including Math, English and triple Science" ]},
+    "work":{"text":["August 2019 - present-Amazon Associate","Working at Amazon has given me experience in working in a fast-paced environment with the ability to deal with tight deadlines. It has proven to be a job which successfully tests my ability to multitask. It has also reinforced my understanding of the importance of teamwork and commitment to completing tasks quickly and effectively as my productivity has a direct impact on others. I have proven to be a dedicated and hardworking employee with an excellent punctuality and attendance record. I have been selected to support new members of staff though deliver training to ensure they are clear about their role and the health and safety aspects of the company. Many of my roles have a major impact on the productivity of the department of which I am entrusted to work with autonomy.","June 2018 - September 2018","During the summer holidays of my degree course I took the position of a retail team member at Rheged, which is a touist attraction in the Lake District. In this role I was responsible for assisting customers with their requirements in addition to serving customers at the till and stock replenishment. This job gave me great experience in dealing with people of all ages and from many different backgrounds. It also gave me experience in dealing in stressful situations as often coach trips would visit requiring me to serve visitors very quickly."]},
+    "Voluntary_Experience":{"text":["June 201June 2018 Scotby School and Stone raise Cumbria Key Skills","I have spent 8 weeks in gaining experience in two primary schools (Scotby and Stone Raise). Working alongside people of all ages has allowed me to further my communication and leadership skills, as I had to carry out tasks which included explaining relatively complex concepts to people of a much younger age and preparing for the coming day. Another area I improved through this experience was my time management skills, as these tasks had to be done in a limited amount of time requiring me to be organised and alert.","January 2012–January 2015 Volunteered for Scotby Cubs and Scouts","As an active member of scouts during my formative years and greatly enjoying outdoors activities I decided to continue with the organisation as a young leader. Volunteering gave me the opportunity to refine my planning skills, as I had to design, plan, and supervise activities which were both educational and engaging for the children attending each session. Taking care of the children was both a large responsibility and time commitment. During my time working as a young leader I also improved my ability to work as part of a team, which worked to enhance the lives of local young people which was extremely rewarding."]},
+    "personal_interests":{"text":["In my spare time I enjoy cooking especially for other(picture on right is from when i made christmas dinner for ten of freinds) and I'am currently writting a cookbook.I also enjoy going for walks,playing video games and designing t-shirts"]}
+    }
+}
 }
