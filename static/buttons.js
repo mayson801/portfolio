@@ -81,11 +81,6 @@ function create_box(startbox,box1,json_info) {
 
 }
 
-function pre_flipped_box(box1,box2){
-
-
-}
-
 function clearing(){
   console.log("clear")
   const myNode = document.getElementById("full-width");
@@ -97,11 +92,9 @@ function footer(){
     fullwidth = document.getElementById("full-width");
 
     var footer = document.createElement("div")
-    footer.classList.add("footer")
-
-    var footertxt = document.createTextNode("hello");
+    footer.id = "footer"
+    var footertxt = document.createTextNode("footer");
     footer.appendChild(footertxt);
-
     fullwidth.appendChild(footer)
 
 }
@@ -112,8 +105,7 @@ function projects(JSON_data){
   create_box("twitter bot", "../static/img/Pringles-Logo.png",JSON_data.projects.twitter_bot)
   create_box("uk top 40 study", "../static/img/top_40.png",JSON_data.projects.top_40_data)
   create_box("twitter cancel culture dissertation", "../static/img/cancel.jpg",JSON_data.projects.dissertation)
-  create_box("spotify wrapped Comparing", "false",JSON_data.projects.spotifywrapped)
-
+  create_box("spotify wrapped Comparing", "../static/img/spotify_wrapped.png",JSON_data.projects.spotifywrapped)
   footer()
 }
 
@@ -127,13 +119,33 @@ function skills(JSON_data){
 
 function about(JSON_data){
     clearing()
-  create_box("Personal Summary","../static/img/stock.jpg",JSON_data.projects.aboutme.Personal_summary)
-  create_box("Education", "../static/img/graduate.jpg",JSON_data.projects.aboutme.Education)
-  create_box("work", "../static/img/stock.jpg",JSON_data.projects.aboutme.work)
+    create_box("Personal Summary","../static/img/stock.jpg",JSON_data.projects.aboutme.Personal_summary)
+    create_box("Education", "../static/img/graduate.jpg",JSON_data.projects.aboutme.Education)
+    create_box("work", "../static/img/stock.jpg",JSON_data.projects.aboutme.work)
     create_box("Voluntary Experience", "../static/img/stock.jpg",JSON_data.projects.aboutme.Voluntary_Experience)
-  create_box("Personal Interests", "../static/img/stock.jpg",JSON_data.projects.aboutme.personal_interests)
+    create_box("Personal Interests", "../static/img/stock.jpg",JSON_data.projects.aboutme.personal_interests)
+    footer()
 }
 
-function contact(JSON_data){
+function home(){
     clearing()
+    var image_span = document.createElement("span");
+    var text_span = document.createElement("span")
+    var image = document.createElement("IMG");
+     image_span.classList.add("center");
+     image_span.classList.add("firstiteam")
+     text_span.classList.add("center");
+     text_span.classList.add("seconditeam");
+     image.classList.add("img_projects");
+     image.style.objectFit ="cover"
+
+    image.setAttribute("src", "../static/img/me.jpg");
+     var text = document.createTextNode("My name is Matthew Mayson.Welcome to my portfolio")
+
+    fullwidth = document.getElementById("full-width");
+    fullwidth.appendChild(image_span)
+    fullwidth.appendChild(text_span)
+    image_span.appendChild(image)
+    text_span.appendChild(text)
+
 }

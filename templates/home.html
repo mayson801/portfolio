@@ -14,18 +14,18 @@ var JSON_data = {{ data | tojson | safe}};
 <body>
     <table id="navbar">
         <tr>
-            <th class="navbaritems"><button onclick="projects(JSON_data)" >projects</button></th>
+            <th class="navbaritems"><button onclick="home()">Home</button></th>
             <!--<th class="navbaritems"><button onclick="skills(JSON_data)">skills</button></th>-->
-            <th class="navbaritems"><button onclick="about(JSON_data)">about me</button></th>
-            <th class="navbaritems"><button onclick="contact(JSON_data)">contact me</button></th>
+            <th class="navbaritems"><button onclick="projects(JSON_data)">Projects</button></th>
+            <th class="navbaritems"><button onclick="about(JSON_data)">About me</button></th>
         </tr>
     </table>
 
 
     <div id="full-width">
-        <span class="center firstiteam" style="height:80%; width:40%;position:absolute"><img class="img_projects" src="../static/img/me.jpg"></span>
-        <span class="center seconditeam">My name Matthew Mayson.Welcome to my portfolio</span>
-        <div id="footer">test</div>
+        <span class="center firstiteam" id ="main_img_span"><img class="img_projects" src="../static/img/me.jpg" style="object-fit:cover"></span>
+        <span class="center seconditeam">My name is Matthew Mayson.Welcome to my portfolio</span>
+        <div id="footer" style="color: transparent">test</div>
     </div>
 
 <script>
