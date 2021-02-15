@@ -6,8 +6,12 @@
 }
 body{
     margin:0px;
-    font-size: 110%;
     background-color:#CED3DC;
+    font-family: "Adobe Garamond Pro";
+}
+
+p{
+    font-size: 1.95vmin;
 }
 #full-width{
         width:100%;
@@ -33,13 +37,6 @@ body{
         -ms-transform: translate(-50%,-50%);
         transform: translate(-50%,-50%);
         text-align: center;
-}
-
-#main_img_span{
-
-    height:80%;
-    width:40%;
-    position:absolute
 }
 
 #navbar{

@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a94904af-3f83-49cc-953b-4d4c5b37f1d4" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/static/img/cooking.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/me.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/work.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data_text.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/me.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/img/voluntary.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +138,11 @@
       <workItem from="1611957465608" duration="2223000" />
       <workItem from="1612000911197" duration="44196000" />
       <workItem from="1612097123338" duration="5590000" />
-      <workItem from="1612278387589" duration="8349000" />
+      <workItem from="1612278387589" duration="12878000" />
+      <workItem from="1613076143604" duration="622000" />
+      <workItem from="1613079732245" duration="599000" />
+      <workItem from="1613157411109" duration="6786000" />
+      <workItem from="1613392835215" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1612045813217</created>
@@ -200,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612279955118</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="commit">
+      <created>1612293730334</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1612293730350</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit">
+      <created>1612294046785</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1612294046785</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +244,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/portfolio$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1612278497752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/portfolio$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1613159958204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

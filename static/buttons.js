@@ -121,8 +121,8 @@ function about(JSON_data){
     clearing()
     create_box("Personal Summary","../static/img/personal.jpg",JSON_data.projects.aboutme.Personal_summary)
     create_box("Education", "../static/img/graduate.jpg",JSON_data.projects.aboutme.Education)
-    create_box("work", "../static/img/stock.jpg",JSON_data.projects.aboutme.work)
-    create_box("Voluntary Experience", "../static/img/stock.jpg",JSON_data.projects.aboutme.Voluntary_Experience)
+    create_box("work", "../static/img/work.png",JSON_data.projects.aboutme.work)
+    create_box("Voluntary Experience", "../static/img/voluntary.jpg",JSON_data.projects.aboutme.Voluntary_Experience)
     create_box("Personal Interests", "../static/img/cooking.png",JSON_data.projects.aboutme.personal_interests)
     footer()
 }
@@ -139,7 +139,7 @@ function home(){
      image.classList.add("img_projects");
      image.style.objectFit ="cover"
 
-    image.setAttribute("src", "../static/img/me.jpg");
+    image.setAttribute("src", "../static/img/me.png");
      var text = document.createTextNode("My name is Matthew Mayson.Welcome to my portfolio")
 
     fullwidth = document.getElementById("full-width");
